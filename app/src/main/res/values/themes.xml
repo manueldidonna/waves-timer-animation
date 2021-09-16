@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Theme.JetpackComposeTemplate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.TransparentSystemBars" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>

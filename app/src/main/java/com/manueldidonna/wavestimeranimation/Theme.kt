@@ -14,8 +14,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package com.manueldidonna.jetpackcomposetemplate
+package com.manueldidonna.wavestimeranimation
 
+import androidx.compose.animation.core.Spring
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
@@ -29,6 +30,9 @@ import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.insets.ProvideWindowInsets
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+
+internal const val SpringDefaultDampingRatio = Spring.DampingRatioMediumBouncy
+internal const val SpringDefaultStiffness = Spring.StiffnessLow
 
 @Composable
 fun JetpackComposeTemplateTheme(
@@ -53,7 +57,7 @@ fun EdgeToEdgeContent(content: @Composable () -> Unit) {
 }
 
 private val AndroidBlueColor = Color(0xff9bbed3)
-private val AndroudBlueDarkerColor = Color(0xff073042)
+private val AndroidBlueDarkerColor = Color(0xff073042)
 
 private val DarkColorPalette = darkColors(
     primary = AndroidBlueColor,
@@ -64,8 +68,8 @@ private val DarkColorPalette = darkColors(
 )
 
 private val LightColorPalette = lightColors(
-    primary = AndroudBlueDarkerColor,
-    primaryVariant = AndroudBlueDarkerColor,
+    primary = AndroidBlueDarkerColor,
+    primaryVariant = AndroidBlueDarkerColor,
     secondary = Color(0xff3ddc84)
 )
 

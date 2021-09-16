@@ -14,7 +14,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package com.manueldidonna.jetpackcomposetemplate
+package com.manueldidonna.wavestimeranimation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -31,16 +31,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTemplateTheme {
                 EdgeToEdgeContent {
-                    JetpackComposeTemplate()
+                    WavesTimerAnimation()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun JetpackComposeTemplate() {
-    Surface {
-        Text(text = "Hello world!")
     }
 }
